@@ -103,7 +103,7 @@ namespace RealTimeCaptionTranslate
             AutomationElement[] elementArray = new AutomationElement[elementCollection.Count];
             elementCollection.CopyTo(elementArray, 0);
             string text = "";
-            foreach (AutomationElement textElement in elementArray.Reverse().Take(2).Reverse())
+            foreach (AutomationElement textElement in elementArray.Reverse().Take(3).Reverse())
             {
                 text += textElement.Current.Name + "\n";
             }
