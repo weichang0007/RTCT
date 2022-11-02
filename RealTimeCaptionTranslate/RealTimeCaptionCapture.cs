@@ -105,7 +105,7 @@ namespace RealTimeCaptionTranslate
             string text = "";
             foreach (AutomationElement textElement in elementArray.Reverse().Take(3).Reverse())
             {
-                text += textElement.Current.Name + "\n";
+                text += textElement.Current.Name + " ";
             }
             return text;
         }
